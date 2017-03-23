@@ -200,6 +200,8 @@ class EcomDev_PHPUnit_Mock_Proxy
         );
     }
 
+    
+
     /**
      * Forwards all method calls to mock instance
      *
@@ -215,5 +217,9 @@ class EcomDev_PHPUnit_Mock_Proxy
         );
     }
 
-    
+    public function __phpunit_hasMatchers()
+    {
+        return true;
+    }
+  
 }
